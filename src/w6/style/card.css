@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Cute+Font&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  font-family: "Cute Font", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.card.card--color-blue {
+  background-color: oklch(98% 0.025 200);
+}
+
+.card {
+  font-family: "Noto Sans KR", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+
+  max-width: 400px;
+  background-color: oklch(98% 0.025 90);
+  overflow-x: hidden;
+  border-radius: 12px;
+  margin-top: 3rem;
+  /* padding: 16px; */
+}
+
+.card:first-child {
+  margin-top: 0;
+}
+
+/*작은 이미지 사이즈 맞게 채우는 법*/
+.card__img {
+  width: 100%;
+}
+
+.card__top {
+  /* margin: 16px; */
+  padding-inline: 16px;
+  padding-block: 12px;
+}
+
+.card__bottom {
+  padding: 16px;
+}
+
+.card__p {
+  margin-top: 32px;
+}
+
+.card__title {
+  font-weight: 500;
+  line-height: 1.5rem;
+  font-size: 1rem;
+}
+
+.card__subtitle {
+  margin-top: 0.25rem;
+  line-height: 1.25rem;
+  font-size: 0.875rem;
+}
+
+/* 셀렉터기능 */
+.card__bottom .card__title {
+  font-weight: 400;
+}
+
+/* .card__bottom > .card__title { 
+  font-weight: 400;
+}*/
+
+.card__bottom .card__subtitle {
+  margin-top: 0;
+}
