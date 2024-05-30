@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>loiiie embeding</title>
+    <script
+      src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
+      type="module"
+    ></script>
+    <script>
+      LottieInteractivity.create({
+        player: '#lottie-2',
+        mode: 'cursor',
+        actions: [
+          {
+            type: 'click',
+            forceFlag: false,
+          },
+        ],
+      });
+    </script>
+    <link rel="stylesheet" href="./style/style.css" />
+  </head>
+  <body>
+    <div class="section">
+      <div class="container">
+        <h1>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, amet?
+        </h1>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem
+          molestiae delectus sequi atque? Molestiae dolorum cupiditate
+          voluptatem ab architecto, obcaecati nostrum maxime dolores
+          consectetur, aut impedit rem non, deleniti beatae hic nesciunt ipsam
+          sed vel laborum ad vitae cumque. Quo distinctio officiis sequi
+          incidunt nobis ad rerum quos expedita blanditiis?
+        </p>
+
+        <dotlottie-player
+          id="lottie-1"
+          class="lottie"
+          src="https://lottie.host/708fc924-d04a-4d45-8634-9414cd699588/JYfYYMTRUJ.json"
+          background="transparent"
+          speed="1"
+          loop
+          autoplay
+        ></dotlottie-player>
+
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore saepe
+          nemo neque quisquam? Dicta dignissimos, harum perspiciatis accusamus
+          praesentium quasi.
+        </p>
+        <lottie-player
+          id="lottie-2"
+          class="lottie"
+          src="assets/lottiedownload.json"
+          background="transparent"
+          speed="1"
+        ></lottie-player>
+      </div>
+    </div>
+  </body>
+</html>
